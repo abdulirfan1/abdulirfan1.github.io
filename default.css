@@ -1,0 +1,28 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: grey;
+    color: aquamarine;
+}
+
+header {
+    text-align: center;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+hr {
+    width: 50%;
+    background-color: black;
+    color: black;
+}
