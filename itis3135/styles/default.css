@@ -1,12 +1,21 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #123524;;
-    color: #E0E0E2;
+    background-color: #eefbfb;;
+    color: #123524;
 }
 
-header {
-    text-align: center;
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    martgin-top: 0;
+    width: 10%;
     
+}
+
+body {
+    margin: 10% 20% 20% 10%;
+    padding: 0;
 }
 
 h2 {
@@ -19,6 +28,10 @@ h3 {
 
 p {
     text-align: center;
+    color: #eefbfb;
+    background-color: #123524;
+    border-radius: 25px;
+    padding: 30px 20px 30px 20px;
 }
 
 hr {
@@ -28,7 +41,7 @@ hr {
 }
 
 a {
-    color: #E0E0E2;
+    color: #123524;
 }
 
 footer {
