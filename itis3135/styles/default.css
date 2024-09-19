@@ -1,21 +1,24 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eefbfb;;
+    background-color: #eefbfb;
     color: #123524;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
 }
 
 header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    martgin-top: 0;
+    position: absolute;
+    top: -50px;
+    left: 10px;
     width: 10%;
-    
 }
 
-body {
-    margin: 10% 20% 20% 10%;
-    padding: 0;
+main {
+    margin: 10% 20%;
 }
 
 h2 {
@@ -31,13 +34,7 @@ p {
     color: #eefbfb;
     background-color: #123524;
     border-radius: 25px;
-    padding: 30px 20px 30px 20px;
-}
-
-hr {
-    width: 50%;
-    background-color: black;
-    color: black;
+    padding: 30px 20px;
 }
 
 a {
