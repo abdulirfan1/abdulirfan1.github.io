@@ -49,6 +49,19 @@ main p {
     padding: 30px 20px 30px 20px;
 }
 
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main p {
+        width: 50%;
+    }
+}
+
 hr {
     width: 50%;
     background-color: black;
