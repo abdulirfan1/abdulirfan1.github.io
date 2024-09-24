@@ -21,7 +21,7 @@ header img {
     left: 10px;
 }
 
-header h2 {
+h2 {
     text-align: center; 
     flex-grow: 1; 
 }
@@ -33,7 +33,7 @@ main {
     overflow: hidden;
 }
 
-main h3 {
+h3 {
     font-size: 150%;
     text-align: center;
 }
