@@ -41,7 +41,7 @@ h3 {
     text-align: center;
 }
 
-p {
+main p {
     text-align: center;
     color: #eefbfb;
     background-color: #123524;
@@ -66,4 +66,9 @@ footer {
     padding: 10px;
     padding-bottom: 30px;
     text-align: center;
+}
+
+footer p {
+    font-size: 12px;
+    opacity: 0.8;
 }
