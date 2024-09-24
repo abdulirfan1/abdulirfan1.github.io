@@ -31,9 +31,12 @@ h2 {
 
 
 main {
-    height: 90vh;
+    height: 100%;
     padding: 10px 20px 10px 20px;
     overflow: hidden;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
 }
 
 h3 {
@@ -67,6 +70,16 @@ hr {
 
 a {
     color: #123524;
+}
+
+main a {
+    text-decoration: none;
+    padding: 7px;
+       
+}
+
+main a:hover {
+    color: #90a955;
 }
 
 footer {
