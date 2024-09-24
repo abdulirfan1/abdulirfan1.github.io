@@ -17,6 +17,8 @@ header {
 
 header img {
     width: 10%;
+    max-height: 100px;
+    max-width: 100px;
     position: absolute;
     left: 10px;
 }
