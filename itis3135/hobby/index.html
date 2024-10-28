@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1</title>
+    <link rel="icon" href="path-to-your-favicon" type="image/x-icon">
+    <style>
+        /* Embedded Mercedes-inspired styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1E1E1E; /* Dark background */
+            color: #E5E5E5; /* Light gray text */
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #2A2A2A; /* Slightly lighter for header/footer */
+            padding: 10px;
+            text-align: center;
+        }
+        header h1 {
+            color: #00D2BE; /* Teal accent color */
+        }
+        nav a {
+            margin: 0 10px;
+            color: #00D2BE;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #E5E5E5;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+        }
+        .section.active {
+            display: block;
+        }
+        figure {
+            text-align: center;
+        }
+        figure img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        figcaption {
+            font-style: italic;
+            color: #A5A5A5; /* Medium gray for captions */
+        }
+        footer p {
+            color: #A5A5A5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Passion for Formula 1</h1>
+    <nav>
+        <a onclick="showSection('about')">About F1</a> |
+        <a onclick="showSection('f1-basics')">F1 Basics</a> |
+        <a onclick="showSection('race-calendar')">Race Calendar</a> |
+        <a onclick="showSection('iconic-circuits')">Iconic Circuits</a> |
+        <a onclick="showSection('driving-techniques')">Driving Techniques</a> |
+        <a onclick="showSection('why')">Why F1?</a>
+        <a onclick="showSection('ai-prompts')">AI Prompts</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about" class="section active">
+        <h2>About F1</h2>
+        <p>Formula 1 (F1) is the premier international motorsport competition, featuring high-speed, open-wheel, single-seater race cars. Founded in 1950, it consists of a series of races known as Grand Prix, held on circuits around the world. F1 is renowned for its blend of cutting-edge technology, team strategy, and driver skill, with teams like Ferrari, Mercedes, and Red Bull Racing competing for top honors. Each season, drivers and constructors vie for the championship titles, making F1 a thrilling showcase of engineering innovation, speed, and international fanfare.</p>
+        <figure>
+            <img src="images/f1_car.jpg" alt="F1 Car">
+            <figcaption>Mercedes AMG Formula 1 Team car at the Austin Grand Prix 2024.</figcaption>
+        </figure>
+    </section>
+
+    <section id="f1-basics" class="section">
+        <h1>Formula 1 Overview</h1>
+
+        <h2>1. Teams and Drivers</h2>
+        <p>Each team fields two cars with two drivers, competing independently but also contributing to the team's overall points. Teams are backed by major automotive manufacturers or racing specialists, such as Ferrari, Mercedes, and Red Bull Racing.</p>
+
+        <h2>2. Cars and Regulations</h2>
+        <p>F1 cars are highly engineered, aerodynamic machines capable of speeds over 200 mph, with strict regulations on design, weight, and materials to ensure safety and fair competition. Teams spend millions on car development, balancing performance with fuel and tire management while meeting technical restrictions set by the FIA (the sport's governing body).</p>
+
+        <h2>3. Race Weekend Format</h2>
+        <p>Each race weekend includes:</p>
+        <ul>
+            <li><strong>Practice Sessions</strong> (Friday/Saturday): Three sessions where drivers test car setups and strategies.</li>
+            <li><strong>Qualifying</strong> (Saturday): Divided into three rounds (Q1, Q2, Q3). This determines the starting grid order for the race based on lap times, with the fastest driver starting from pole position.</li>
+            <li><strong>Race</strong> (Sunday): The main event where drivers compete to complete the set number of laps first, with points awarded based on finishing position.</li>
+        </ul>
+
+        <h2>4. Scoring System</h2>
+        <p>Points are awarded to the top 10 finishers in each race, with 25 points for the winner, 18 for second place, and so on down to 1 point for 10th place. The fastest lap in the race, if achieved by a top-10 finisher, also grants an extra point. Points contribute to both the Drivers' and Constructors' Championships, crowning the top driver and team at season's end.</p>
+
+        <h2>5. Pit Stops and Strategy</h2>
+        <p>Drivers must make at least one pit stop to change tires, which is essential due to tire degradation and FIA rules on tire compounds. Teams use strategy to time pit stops, manage tire wear, and optimize fuel, often creating dramatic moments during races.</p>
+
+        <h2>6. The Season and Championship</h2>
+        <p>F1 runs from March to December, featuring around 20-24 races. The driver and team with the most points at the end of the season win the Drivers’ and Constructors’ Championships, respectively.</p>
+        
+        <figure>
+            <img src="images/f1_team.jpg" alt="F1 Team">
+            <figcaption>A well-organized F1 team in the pit stop.</figcaption>
+        </figure>
+    </section>
+
+    <section id="race-calendar" class="section">
+        <h2>Race Calendar</h2>
+        <p>The F1 season spans from March to December with races across the globe...</p>
+        <table>
+            <tr><th>Location</th><th>Date</th></tr>
+            <tr><td>Monaco</td><td>May 28</td></tr>
+            <tr><td>Silverstone</td><td>July 9</td></tr>
+        </table>
+        <figure>
+            <img src="images/f1_track.jpg" alt="Race Track">
+            <figcaption>The thrilling turns of Monaco’s circuit.</figcaption>
+        </figure>
+        <p><em>Image generated with prompt: "Aerial view of Monaco's F1 circuit"</em></p>
+    </section>
+
+    <section id="iconic-circuits" class="section">
+        <h2>Iconic Circuits</h2>
+        <p>Circuits like Monaco, Silverstone, and Monza are part of F1’s legacy...</p>
+        <figure>
+            <img src="images/f1_circuit.jpg" alt="Iconic Circuit">
+            <figcaption>The historic Monza circuit in Italy.</figcaption>
+        </figure>
+        <p><em>Image generated with prompt: "The Monza circuit, high-resolution"</em></p>
+    </section>
+
+    <section id="driving-techniques" class="section">
+        <h2>Driving Techniques</h2>
+        <p>Formula 1 drivers use advanced techniques to handle corners, overtake, and manage tires...</p>
+        <figure>
+            <img src="images/f1_technique.jpg" alt="Driving Techniques">
+            <figcaption>High-speed cornering on a technical track.</figcaption>
+        </figure>
+        <p><em>Image generated with prompt: "F1 car taking a sharp turn, photorealistic"</em></p>
+    </section>
+
+    <section id="why" class="section">
+        <h2>Why F1?</h2>
+        <p>Formula 1 is more than a sport; it’s a blend of art and science...</p>
+        <figure>
+            <img src="images/f1_passion.jpg" alt="Passion for F1">
+            <figcaption>Capturing the passion and excitement of F1 racing.</figcaption>
+        </figure>
+        <p><em>Image generated with prompt: "Fans watching an intense F1 race"</em></p>
+    </section>
+
+    <section id="ai-prompts" class="section">
+        <h2>AI Prompts</h2>
+        <p>This section includes AI prompts used for generating content and images on this page.</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 Irfan Inc. All rights reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
