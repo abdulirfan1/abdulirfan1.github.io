@@ -27,10 +27,11 @@
             text-align: center;
         }
 
-        header h1 {
+        h1 {
             color: #00D2BE; 
             font-family: 'Unity Sans TT SemiBold', sans-serif;
             font-weight: bold;
+            text-align: center;
             text-align: center;
         }
 
@@ -54,9 +55,10 @@
             padding: 20px;
         }
 
-        .section.active {
+        .visible {
             display: block;
         }
+
 
         figure {
             text-align: center;
@@ -71,10 +73,6 @@
         figcaption {
             font-style: italic;
             color: #A5A5A5;
-        }
-
-        h1 {
-            text-align: center;
         }
 
         h2 {
@@ -161,18 +159,19 @@
 <header>
     <h1>Passion for Formula 1</h1>
     <nav>
-        <a onclick="showSection('about')">About F1</a> |
-        <a onclick="showSection('f1-basics')">F1 Basics</a> |
-        <a onclick="showSection('race-calendar')">Race Calendar</a> |
-        <a onclick="showSection('iconic-circuits')">Iconic Circuits</a> |
-        <a onclick="showSection('driving-techniques')">Driving Techniques</a> |
-        <a onclick="showSection('why')">Why F1?</a>
-        <a onclick="showSection('ai-prompts')">AI Prompts</a>
+        <a id="about-link">About F1</a> |
+        <a id="f1-basics-link">F1 Basics</a> |
+        <a id="race-calendar-link">Race Calendar</a> |
+        <a id="iconic-circuits-link">Iconic Circuits</a> |
+        <a id="driving-techniques-link">Driving Techniques</a> |
+        <a id="why-link">Why F1?</a>
+        <a id="ai-prompts-link">AI Prompts</a>
     </nav>
+    
 </header>
 
 <main>
-    <section id="about" class="section active">
+    <section id="about" class="section visible">
         <h2>About F1</h2>
         <p>Formula 1 (F1) is the premier international motorsport competition, featuring high-speed, open-wheel, single-seater race cars. Founded in 1950, it consists of a series of races known as Grand Prix, held on circuits around the world. F1 is renowned for its blend of cutting-edge technology, team strategy, and driver skill, with teams like Ferrari, Mercedes, and Red Bull Racing competing for top honors. Each season, drivers and constructors vie for the championship titles, making F1 a thrilling showcase of engineering innovation, speed, and international fanfare.</p>
 
@@ -232,7 +231,7 @@
     <section id="race-calendar" class="section">
         <h1>Formula 1 2024 Calendar</h1>
 
-        <button class="highlight-next-race-button" onclick="highlightNextRace()">Highlight Next Race</button>
+        <button class="highlight-next-race-button">Highlight Next Race</button>
 
         <table>
             <thead>

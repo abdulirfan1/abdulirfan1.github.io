@@ -1,8 +1,8 @@
 function showSection(id) {
     document.querySelectorAll('.section').forEach((section) => {
-        section.classList.remove('active');
+        section.classList.remove('visible');
     });
-    document.getElementById(id).classList.add('active');
+    document.getElementById(id).classList.add('visible');
 }
 
 
@@ -32,4 +32,15 @@ function highlightNextRace() {
         }
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("about-link").addEventListener("click", () => showSection("about"));
+    document.getElementById("f1-basics-link").addEventListener("click", () => showSection("f1-basics"));
+    document.getElementById("race-calendar-link").addEventListener("click", () => showSection("race-calendar"));
+    document.getElementById("iconic-circuits-link").addEventListener("click", () => showSection("iconic-circuits"));
+    document.getElementById("driving-techniques-link").addEventListener("click", () => showSection("driving-techniques"));
+    document.getElementById("why-link").addEventListener("click", () => showSection("why"));
+    document.getElementById("ai-prompts-link").addEventListener("click", () => showSection("ai-prompts"));
+    document.getElementById("highlight-next-race-button").addEventListener("click", highlightNextRace);
+});
 
