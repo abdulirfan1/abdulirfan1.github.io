@@ -1,19 +1,18 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eefbfb;;
-    color: #123524;
+    background-color: #B8BDB5;;
+    color: #E0E2DB;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 header {
-    background-color: #90a955;
-    padding: 10px;
+    background-color: #1c3144; 
+    padding: 20px;
+    padding-top: 1px;
     margin: -10px;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    position: relative; 
+    text-align: center;
 }
 
 header img {
@@ -22,13 +21,24 @@ header img {
     max-width: 75px;
     position: absolute;
     left: 10px;
+    padding-top: 20px;
 }
 
 h2 {
     text-align: center; 
     flex-grow: 1; 
+    color: #1c3144;
 }
 
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    flex: 1;
+}
 
 main {
     height: 100%;
@@ -42,12 +52,14 @@ main {
 h3 {
     font-size: 150%;
     text-align: center;
+    color: #1c3144;
+
 }
 
 main p {
     text-align: center;
-    color: #eefbfb;
-    background-color: #123524;
+    color: #E0E2DB;
+    background-color: #1c3144;
     border-radius: 25px;
     padding: 30px 20px 30px 20px;
     max-width: 600px;
@@ -69,7 +81,7 @@ hr {
 }
 
 a {
-    color: #123524;
+    color: #E0E2DB;
 }
 
 main a {
@@ -83,13 +95,16 @@ main a:hover {
 }
 
 footer {
-    background-color: #90a955;
+    background-color: #1C3144;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
     margin-left: -10px;
     margin-right: -10px;
-    padding: 10px;
-    padding-bottom: 30px;
-    text-align: center;
+    overflow: hidden;
 }
+
 
 footer p {
     font-size: 12px;
