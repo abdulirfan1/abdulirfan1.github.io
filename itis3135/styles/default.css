@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #B8BDB5;;
-    color: #E0E2DB;
+    color: #1c3144;
     padding: 0;
     overflow-x: hidden;
 }
@@ -21,6 +21,10 @@ header img {
     position: absolute;
     left: 10px;
     padding-top: 20px;
+}
+
+header h1 {
+    color: #E0E2DB;
 }
 
 .car-image img {
@@ -50,34 +54,43 @@ main {
     height: 100%;
     padding: 10px 20px 10px 20px;
     overflow: hidden;
-    align-items: center; 
-    justify-content: center;
+}
+
+.crap-link {
+    color: #1c3144;
     text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.about-company {
+    text-align: center;
+    padding: 10px;
+}
+
+.comp-img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h3 {
     font-size: 150%;
-    text-align: center;
     color: #1c3144;
-
 }
 
 main p {
-    text-align: center;
-    color: #E0E2DB;
-    background-color: #1c3144;
+    color: #1c3144;
     border-radius: 25px;
-    padding: 30px 20px 30px 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    text-align: left;
 }
 
 @media screen and (min-width: 768px) {
     main p {
-        font-size: 20px; 
-        max-width: 800px; 
+        font-size: 20px;
     }
-
 }
 
 hr {
@@ -97,7 +110,7 @@ main a {
 }
 
 main a:hover {
-    color: #90a955;
+    color: #000000;
 }
 
 footer {
@@ -113,6 +126,7 @@ footer {
 
 
 footer p {
+    color: #E0E2DB;
     font-size: 12px;
     opacity: 0.8;
 }
