@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tables and Contact Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/LOGO.png">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body class="page-container">
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main class="content-wrap">
+        <h2>Tables and Contact Information</h2>
+
+        <section class="contact-form">
+            <h3>Employee Registration Form</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="fullName" required placeholder="Enter your full name" size="30">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" 
+                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com" size="30">
+                </div>
+
+                <div class="form-group">
+                    <p>Select Your Department:</p>
+                    <label><input type="radio" name="department" value="management" required> Management</label>
+                    <label><input type="radio" name="department" value="marketing"> Marketing</label>
+                    <label><input type="radio" name="department" value="sales"> Sales</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Select Your Skills:</p>
+                    <label><input type="checkbox" name="skills" value="leadership"> Leadership</label>
+                    <label><input type="checkbox" name="skills" value="communication"> Communication</label>
+                    <label><input type="checkbox" name="skills" value="technical"> Technical</label>
+                    <label><input type="checkbox" name="skills" value="analytics"> Analytics</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Years of Experience:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select experience</option>
+                        <option value="entry">0-2 years</option>
+                        <option value="junior">3-5 years</option>
+                        <option value="mid">6-10 years</option>
+                        <option value="senior">10+ years</option>
+                    </select>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="reset" class="reset-btn">Reset Form</button>
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
+
