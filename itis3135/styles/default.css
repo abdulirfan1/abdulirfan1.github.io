@@ -101,6 +101,34 @@ main {
     height: 100%;
     padding: 10px 20px;
     overflow: hidden;
+    max-width: 1200px; 
+    width: 90%; 
+    margin: 0 auto; 
+
+}
+
+    /* Tablet View (min-width: 768px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        width: 95%; 
+    }
+    main p {
+        font-size: 18px; 
+    }
+}
+
+    /* Mobile View (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    main {
+        width: 100%; 
+        padding: 5px; 
+    }
+    header img, footer img {
+        width: 50px; 
+    }
+    main p {
+        font-size: 16px; 
+    }
 }
 
 .car-image img {
