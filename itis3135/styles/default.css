@@ -98,13 +98,13 @@ main p {
 
 /* Main Content */
 main {
+    box-sizing: border-box;
     height: 100%;
     padding: 10px 20px;
     overflow: hidden;
     max-width: 1200px; 
     width: 90%; 
     margin: 0 auto; 
-
 }
 
     /* Tablet View (min-width: 768px) */
@@ -120,6 +120,7 @@ main {
     /* Mobile View (max-width: 767px) */
 @media screen and (max-width: 767px) {
     main {
+        box-sizing: border-box;
         width: 100%; 
         padding: 5px; 
     }
@@ -142,6 +143,14 @@ main {
     text-align: center;
     padding: 10px;
     font-size: 20px;
+}
+
+.ibex-image {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
 }
 
 .comp-img {
@@ -205,6 +214,7 @@ tr:hover {
 .form-group input[type="tel"],
 .form-group input[type="email"],
 .form-group select {
+    box-sizing: border-box;
     width: 100%;
     padding: 8px;
     border: 2px solid var(--border-color);
