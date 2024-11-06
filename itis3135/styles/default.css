@@ -13,15 +13,37 @@ body {
     color: var(--primary-color);
     padding: 0;
     overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 main a {
     text-decoration: none;
     padding: 7px;
+}
+
+.itis-link {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.primary-link {
+    color: var(--secondary-color);
 }
 
 main a:hover {
@@ -50,6 +72,10 @@ header img {
     position: absolute;
     left: 10px;
     padding-top: 20px;
+}
+
+footer {
+    margin-top: auto;
 }
 
 h1 {
@@ -105,6 +131,8 @@ main {
     max-width: 1200px; 
     width: 90%; 
     margin: 0 auto; 
+
+    flex: 1;
 }
 
     /* Tablet View (min-width: 768px) */
