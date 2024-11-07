@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>First Scripts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/default.css">
+        <link rel="icon" type="image/png" href="images/LOGO.png">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+
+        <main>
+            <h2>First Scripts</h2>
+            <h3 id="date-display"></h3>
+
+            <form id="user-info-form">
+                <label for="user-name">What's your name?</label>
+                <input type="text" id="user-name" required>
+                <label for="user-mood">How are you feeling today?</label>
+                <input type="text" id="user-mood" required>
+                <button type="submit" onClick="submitUserForm()">Submit</button>
+            </form>
+
+            <div id="greeting"></div>
+
+            <label for="favorite-number">What's your favorite number? (0-10)</label>
+            <input type="number" id="favorite-number" min="0" max="10" required>
+            <button onClick="showPolygon()">Show Polygon</button>"
+
+            <h3>Surprise Features</h3>
+            <button onClick="playIbexSound()">Ibex Sound</button>
+            <button onClick="">Surprise 2</button>
+            <button onClick="">Surprise 3</button>
+            <button onClick="">Surprise 4</button>
+
+            <audio id="ibex-audio" src="components/ibex-sound.wav" preload="auto"></audio>
+        </main>
+
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/firstscripts.js"></script>
+    </body>
+</html>
