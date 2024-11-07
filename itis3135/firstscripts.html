@@ -16,7 +16,7 @@
 
         <main>
             <h2>First Scripts</h2>
-            <h3 id="date-display"></h3>
+            <h2 id="date-display"></h2>
 
             <form id="user-info-form">
                 <label for="user-name">What's your name?</label>
@@ -30,13 +30,17 @@
 
             <label for="favorite-number">What's your favorite number? (0-10)</label>
             <input type="number" id="favorite-number" min="0" max="10" required>
-            <button onClick="showPolygon()">Show Polygon</button>"
+            <button onClick="showPolygon()">Show Polygon</button>
 
             <h3>Surprise Features</h3>
             <button onClick="playIbexSound()">Ibex Sound</button>
-            <button onClick="">Surprise 2</button>
-            <button onClick="">Surprise 3</button>
-            <button onClick="">Surprise 4</button>
+            <button onClick="showIbexWisdom()">Wise Ibex</button>
+            <button onClick="showIbexFunFact()">Fun Fact</button>
+            <button onClick="showIbexPicture()">Ibex Picture</button>
+
+            <div id="ibexImageContainer">
+                <img id="ibexImage" src="" alt="Ibex" style="display:none; max-width:100%; height:auto;">
+            </div>
 
             <audio id="ibex-audio" src="components/ibex-sound.wav" preload="auto"></audio>
         </main>

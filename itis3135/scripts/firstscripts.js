@@ -54,3 +54,45 @@ function playIbexSound() {
     const audio = document.getElementById("ibex-audio");
     audio.play();
 }
+
+function showIbexWisdom() {
+    const ibexSayings = [
+        "Climb high, but always keep your footing steady.",
+        "Balance is not just a skill, but a way of life.",
+        "When the path gets steep, take it one step at a time.",
+        "Adapt to your surroundings, and no peak will be unreachable.",
+        "Stand tall and proud, even in the face of the highest cliffs."
+    ];
+
+    const randomIndex = Math.floor(Math.random() * ibexSayings.length);
+    const randomSaying = ibexSayings[randomIndex];
+
+    alert(randomSaying);
+}
+
+function showIbexFunFact() {
+    const ibexFunFacts = [
+        "Ibexes are incredible climbers, often scaling steep mountain faces with ease.",
+        "Ibexes can jump over 6 feet in a single bound!",
+        "The Ibex's horns can grow up to 3 feet long and are used to establish dominance.",
+        "Ibexes are social animals and often live in herds of up to 20 members.",
+        "Ibexes are herbivores and enjoy a diet of grasses, herbs, and shrubs."
+    ];
+
+    const randomIndex = Math.floor(Math.random() * ibexFunFacts.length);
+    const randomFact = ibexFunFacts[randomIndex];
+
+    alert(randomFact);
+}
+
+function showIbexPicture() {
+    const ibexImage = document.getElementById("ibexImage");
+
+    if (ibexImage.style.display === "none" || ibexImage.style.display === "") {
+        ibexImage.src = "images/ibex.jpg"; // Update with the correct path to your image
+        ibexImage.style.display = "block";
+    } else {
+        ibexImage.style.display = "none";
+    }
+
+}

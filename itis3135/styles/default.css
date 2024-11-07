@@ -273,3 +273,32 @@ button {
 .form-buttons {
     margin-top: 2rem;
 }
+
+/* Responsive Form */
+
+/* Form Styling */
+#user-info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#user-info-form label,
+#user-info-form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#favorite-number {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#user-info-form button, 
+#favorite-number + button {
+    align-self: center;
+    width: 100%;
+    max-width: 150px;
+}
