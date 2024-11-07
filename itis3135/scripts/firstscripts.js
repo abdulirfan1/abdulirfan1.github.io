@@ -8,15 +8,15 @@ function displayDate() {
         hour: 'numeric',
         minute: 'numeric',
         second: 'numeric',
-    }
-    document.getElementById("dateDisplay").textContent = `Today is ${date.toLocaleDateString('en-US', options)}`;
+    };
+    document.getElementById("date-display").textContent = `Today is ${date.toLocaleDateString('en-US', options)}`;
 }
 
 window.onload = displayDate;
 
 function submitUserInfo() {
-    const userName = document.getElementById("userName").value;
-    const userMood = document.getElementById("userMood").value;
+    const userName = document.getElementById("user-name").value;
+    const userMood = document.getElementById("user-mood").value;
     const companyName = "Artificial Ibex";
 
     document.getElementById("greeting").innerHTML = `
@@ -26,7 +26,7 @@ function submitUserInfo() {
 }
 
 function showPolygon() {
-    let favoriteNumber = Math.abs(Math.floor(document.getElementById("favoriteNumber").value));
+    let favoriteNumber = Math.abs(Math.floor(document.getElementById("favorite-number").value));
     let polygonName = "";
 
     switch (favoriteNumber) {
@@ -42,17 +42,15 @@ function showPolygon() {
         case 10: polygonName = "Decagon"; break;
         default: polygonName = "Polygon with more than 10 sides";
     }
+
+    alert(`Your favorite number corresponds to a ${polygonName}.`);
 }
 
 function scriptTest() {
     alert("The script is running!");
 }
 
-function featureOne() {
-    alert
-}
-
 function playIbexSound() {
-    const audio = document.getElementById("ibexAudio");
+    const audio = document.getElementById("ibex-audio");
     audio.play();
 }
