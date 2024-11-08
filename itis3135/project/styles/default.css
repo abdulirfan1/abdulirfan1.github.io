@@ -21,9 +21,16 @@ body {
     padding: 0;
 }
 
+/* Image Styles */
+.logo-image {
+    max-width: 20%;
+    height: auto;
+}
+
 /* Header */
 header {
-    background-color: var(--primary-color);
+    background-color: lightgray;
+    border: var(--primary-color, 2px) solid;
     color: var(--neutral-background);
     padding: 20px;
     text-align: center;
@@ -58,6 +65,10 @@ a {
 
 a:hover {
     color: var(--highlight-color);
+}
+
+nav {
+    color: var(--neutral-text);
 }
 
 /* Buttons */
