@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>BYO Introduction</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>BYO Introduction Page</h2>
+        <p>Welcome to the Build Your Own Intro Page</p>
+        <p>Please fill out the following information</p>
+
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="mascot">Mascot: </label>
+            <input type="text" id="mascot" name="mascot" required>
+            <br>
+            <label for="image">Image: </label>
+            <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" required>
+            <br>
+            <label for="image-caption">Image Caption: </label>
+            <input type="text" id="image-caption" name="image-caption" required>
+            <br>
+            <label for="personal-background">Personal Background: </label>
+            <textarea id="personal-background" name="personal-background" required></textarea>
+            <br>
+            <label for="professional-background">Professional Background: </label>
+            <textarea id="professional-background" name="professional-background" required></textarea>
+            <br>
+            <label for="academic-background">Academic Background: </label>
+            <textarea id="academic-background" name="academic-background" required></textarea>
+            <br>
+            <label for="web-dev-background">Web Development Background: </label>
+            <textarea id="web-dev-background" name="web-dev-background" required></textarea>
+            <br>
+            <label>Courses Currently Enrolled In: </label>
+            <div id="course-container">
+                <input type="text" name="courses[]" placeholder="Enter a course" required>
+                <button type="button" id="add-course">Add Course</button>
+            </div>
+            <br>
+            <label for="funny-thing">Funny Thing?</label>
+            <input type="text" id="funny-thing" name="funny-thing">
+            <br>
+            <label for="anything-else">Anything Else?</label>
+            <textarea id="anything-else" name="anything-else"></textarea>
+            <br>
+            <label>
+                <input type="checkbox" id="agreement" name="agree" required>
+                I understand that this page is not password-protected and will not put sensitive information here
+            </label>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</html>
