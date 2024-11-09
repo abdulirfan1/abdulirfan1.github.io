@@ -302,3 +302,45 @@ button {
     width: 100%;
     max-width: 150px;
 }
+
+/* First Scripts Page */
+
+#first-scripts-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first-scripts-page form, #first-scripts-page #favorite-number, 
+#first-scripts-page #greeting, #first-scripts-page #ibex-image-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#first-scripts-page #favorite-number {
+    width: 26%;
+}
+
+#first-scripts-page button {
+    margin: 5px;
+}
+
+#first-scripts-page #surprise-features-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#first-scripts-page #surprise-features-container button {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#ibex-image {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}

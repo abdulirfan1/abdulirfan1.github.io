@@ -7,7 +7,7 @@ function displayDate() {
         day: 'numeric',
         hour: 'numeric',
         minute: 'numeric',
-        second: 'numeric',
+        second: 'numeric'
     };
     document.getElementById("date-display").textContent = `Today is ${date.toLocaleDateString('en-US', options)}`;
 }
@@ -86,13 +86,23 @@ function showIbexFunFact() {
 }
 
 function showIbexPicture() {
-    const ibexImage = document.getElementById("ibexImage");
+    const ibexImage = document.getElementById("ibex-image");
 
     if (ibexImage.style.display === "none" || ibexImage.style.display === "") {
-        ibexImage.src = "images/ibex.jpg"; // Update with the correct path to your image
+        ibexImage.src = "images/ibex.jpg"; 
         ibexImage.style.display = "block";
     } else {
         ibexImage.style.display = "none";
     }
 
 }
+
+window.onload = function() {
+    displayDate();
+    document.getElementById("submit-user-form-btn").addEventListener("click", submitUserInfo);
+    document.getElementById("show-polygon-btn").addEventListener("click", showPolygon);
+    document.getElementById("ibex-sound-btn").addEventListener("click", playIbexSound);
+    document.getElementById("ibex-wisdom-btn").addEventListener("click", showIbexWisdom);
+    document.getElementById("ibex-fun-fact-btn").addEventListener("click", showIbexFunFact);
+    document.getElementById("ibex-picture-btn").addEventListener("click", showIbexPicture);
+};
