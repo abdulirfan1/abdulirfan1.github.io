@@ -101,8 +101,12 @@ h3 {
 main p {
     color: var(--primary-color);
     border-radius: 25px;
-    padding: 10px;
     text-align: left;
+}
+
+.center-p {
+    text-align: center;
+    font-weight: 475;
 }
 
 @media screen and (min-width: 768px) {
@@ -274,7 +278,88 @@ button {
     margin-top: 2rem;
 }
 
-/* Responsive Form */
+.byo-form input[type="text"],
+.byo-form input[type="file"],
+.byo-form textarea {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.byo-form label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.byo-form label,
+.byo-form input[type="text"],
+.byo-form input[type="file"],
+.byo-form textarea,
+#course-container {
+    margin-bottom: 15px; 
+}
+
+button[type="submit"],
+button[type="reset"] {
+    margin-top: 20px; 
+}
+
+#course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 160px;
+    gap: 10px; 
+}
+
+.course-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.course-entry input[type="text"] {
+    width: 300px;
+}
+
+#add-course {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+#agreement {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+label[for="agreement"] {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 160px;
+    white-space: nowrap;
+}
+
+#agreement {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+label[for="agreement"] {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 160px; 
+    white-space: nowrap;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px; 
+}
 
 /* Form Styling */
 #user-info-form {
