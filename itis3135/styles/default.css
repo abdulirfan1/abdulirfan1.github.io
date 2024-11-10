@@ -430,8 +430,14 @@ label[for="agreement"] {
     height: auto;
 }
 
-#canvas-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Images */
+.cert-image {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cert-link {
+    text-decoration: underline;
+    font-size: larger;
+}
