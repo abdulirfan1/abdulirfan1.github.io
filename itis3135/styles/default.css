@@ -441,3 +441,68 @@ label[for="agreement"] {
     text-decoration: underline;
     font-size: larger;
 }
+
+.slideshow-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    display: none;
+}
+
+.slideshow img.active {
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.thumbnails img.active {
+    border-color: var(--primary-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 15px auto 0;
+}
+
+#prev-btn, #next-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    background-color: darkcyan;
+}

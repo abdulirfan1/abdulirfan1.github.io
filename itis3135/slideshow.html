@@ -13,10 +13,47 @@
         </header>
         <main>
             <h2>Slideshows</h2>
+
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <img src="images/slideshow/a-apple.webp" alt="A - Apple" class="active">
+                    <img src="images/slideshow/b-basketball.webp" alt="B - Basketball">
+                    <img src="images/slideshow/d-dice.webp" alt="D - Dice">
+                    <img src="images/slideshow/u-umbrella.webp" alt="U - Umbrella">
+                    <img src="images/slideshow/l-lamp.webp" alt="L - Lamp">
+                    <img src="images/slideshow/i-icecream.webp" alt="I - Ice Cream">
+                    <img src="images/slideshow/r-rose.webp" alt="R - Rose">
+                    <img src="images/slideshow/f-fork.webp" alt="F - Fork">
+                    <img src="images/slideshow/a-anchor.webp" alt="A - Anchor">
+                    <img src="images/slideshow/n-necklace.webp" alt="N - Necklace">
+                </div>
+                <div class="caption">A - Placeholder</div>
+                <div class="thumbnails">
+                    <img src="images/slideshow/a-apple.webp" alt="A - Apple" data-index="0" class="active">
+                    <img src="images/slideshow/b-basketball.webp" alt="B - Basketball" data-index="1">
+                    <img src="images/slideshow/d-dice.webp" alt="D - Dice" data-index="2">
+                    <img src="images/slideshow/u-umbrella.webp" alt="U - Umbrella" data-index="3">
+                    <img src="images/slideshow/l-lamp.webp" alt="L - Lamp" data-index="4">
+                    <img src="images/slideshow/i-icecream.webp" alt="I - Ice Cream" data-index="5">
+                    <img src="images/slideshow/r-rose.webp" alt="R - Rose" data-index="6">
+                    <img src="images/slideshow/f-fork.webp" alt="F - Fork" data-index="7">
+                    <img src="images/slideshow/a-anchor.webp" alt="A - Anchor" data-index="8">
+                    <img src="images/slideshow/n-necklace.webp" alt="N - Necklace" data-index="9">
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+            
+            <p class="center-p"><a href="https://chatgpt.com/share/673f99c2-cd14-8013-80ad-7de8dfc6244b">Click here</a>to see AI image generation transcript</p>
+
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
         <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="scripts/slideshow.js"></script>
     </body>
 </html>
