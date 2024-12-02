@@ -162,3 +162,10 @@ button:hover {
 #prev-btn:hover, #next-btn:hover {
     background-color: darkcyan;
 }
+
+.google-map {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+}
