@@ -29,18 +29,20 @@ main {
 }
 
 /* Typography */
-h1, h2, h3 {
+
+
+h1 {
     font-family: 'Rubik', sans-serif;
     color: var(--accent-color);
     margin-bottom: 10px;
-}
-
-h1 {
     font-size: 2.5rem;
     font-weight: 700;
 }
 
 h2 {
+    font-family: 'Rubik', sans-serif;
+    color: var(--accent-color);
+    margin-bottom: 10px;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 15px;
@@ -48,6 +50,9 @@ h2 {
 }
 
 h3 {
+    font-family: 'Rubik', sans-serif;
+    color: var(--accent-color);
+    margin-bottom: 10px;
     font-size: 1.5rem;
 }
 
@@ -79,11 +84,6 @@ a:hover {
     color: var(--highlight-color);
     background-color: var(--neutral-background);
     border-radius: 3px;
-}
-
-.primary-link.active {
-    color: var(--primary-color);
-    font-weight: bold;
 }
 
 /* Header */
