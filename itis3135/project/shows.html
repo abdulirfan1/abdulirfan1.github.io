@@ -15,8 +15,13 @@
         </header>
 
         <body>
-            <h1>Trade Shows</h1>
-            <p>Check out our upcoming shows and events</p>
+            <h2 class="center">Trade Shows</h2>
+            <p class="center">Check out our upcoming shows and events</p>
+            <div class="countdown-container">
+                <h2>Countdown to Next Show</h2>
+                <p id="countdown-timer">Loading...</p>
+            </div>
+            
             <iframe 
                 src="https://calendar.google.com/calendar/embed?src=90a44ae658ba4a55ca24020c2ec4460d9c12a1bd34c6cd5decf78b06f6638142%40group.calendar.google.com&ctz=America%2FNew_York" 
                 class="google-calendar">
@@ -26,7 +31,7 @@
         <footer class="site-footer">
             <div data-include="components/footer.html"></div>
         </footer>
-
+        <script src="scripts/countdownTimer.js"></script>
         <script src="scripts/HTMLInclude.min.js"></script>
     </main>
 </html>

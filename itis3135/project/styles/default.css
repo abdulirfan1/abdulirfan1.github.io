@@ -181,6 +181,8 @@ button:hover {
 
 /* Map and Calendar Styles */
 .google-map {
+    display: block;
+    margin: 0 auto; 
     width: 100%;
     max-width: 600px;
     height: 450px;
@@ -200,4 +202,20 @@ button:hover {
 
 .slideshow img.active:hover {
     cursor: zoom-in;
+}
+
+.countdown-container {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+#countdown-timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.center {
+    text-align: center;
 }
