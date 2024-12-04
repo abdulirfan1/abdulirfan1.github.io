@@ -192,3 +192,12 @@ button:hover {
     height: 750px;
     border: 0;
 }
+
+.slideshow img {
+    transition: transform 0.2s ease-in-out, transform-origin 0.2s ease-in-out;
+    cursor: zoom-in;
+}
+
+.slideshow img.active:hover {
+    cursor: zoom-in;
+}

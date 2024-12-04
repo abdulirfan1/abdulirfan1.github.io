@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    let captions = []
-    
+    let captions = [];
+
     $('.thumbnails img').on('click', function () {
         let index = $(this).data('index');
         updateSlide(index);
@@ -20,9 +20,36 @@ $(document).ready(function () {
 
     function updateSlide(index) {
         $('.slideshow img').removeClass('active').eq(index).addClass('active');
-
         $('.thumbnails img').removeClass('active').eq(index).addClass('active');
-
         $('.caption').text(captions[index]);
     }
+
+    let zoomTimeout;
+
+    $('.slideshow').on('mousemove', 'img.active', function (e) {
+        const img = $(this);
+
+        clearTimeout(zoomTimeout);
+        zoomTimeout = setTimeout(() => {
+            const rect = img[0].getBoundingClientRect();
+            const offsetX = e.clientX - rect.left;
+            const offsetY = e.clientY - rect.top;
+
+            const posX = (offsetX / rect.width) * 100;
+            const posY = (offsetY / rect.height) * 100;
+
+            img.css({
+                transform: 'scale(2)',
+                transformOrigin: `${posX}% ${posY}%`
+            });
+        }, 10); 
+    });
+
+    $('.slideshow').on('mouseout', 'img.active', function () {
+        clearTimeout(zoomTimeout);
+        $(this).css({
+            transform: 'scale(1)',
+            transformOrigin: 'center'
+        });
+    });
 });
