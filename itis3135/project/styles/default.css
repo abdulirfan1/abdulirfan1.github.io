@@ -20,35 +20,79 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the body is as tall as the viewport */
+    min-height: 100vh;
 }
 
 main {
-    flex: 1; /* Fills the available space */
+    flex: 1;
     padding: 20px;
 }
 
-/* Image Styles */
-.logo-image {
-    max-width: 20%;
-    height: auto;
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Rubik', sans-serif;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--neutral-text);
+    margin: 15px 0;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+.nav a.primary-link {
+    color: var(--neutral-text);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.primary-link:hover {
+    color: var(--highlight-color);
+    background-color: var(--neutral-background);
+    border-radius: 3px;
+}
+
+.primary-link.active {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 /* Header */
 header {
     background-color: lightgray;
-    border: var(--primary-color, 2px) solid;
+    border: 2px solid var(--primary-color);
     color: var(--neutral-background);
     padding: 20px;
     text-align: center;
-}
-
-/* Paragraphs */
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--neutral-text);
-    margin: 10px 0;
 }
 
 /* Footer */
@@ -73,20 +117,6 @@ p {
     color: var(--highlight-color);
 }
 
-/* Links */
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--highlight-color);
-}
-
-nav {
-    color: var(--neutral-text);
-}
-
 /* Buttons */
 button {
     background-color: var(--complementary-color);
@@ -106,11 +136,10 @@ button:hover {
     border: 2px solid var(--accent-color);
 }
 
-/* Responsive Media Queries */
-@media (max-width: 768px) {
-    body {
-        font-size: 0.9rem;
-    }
+/* Image Styles */
+.logo-image {
+    max-width: 20%;
+    height: auto;
 }
 
 /* Slideshow Styles */
@@ -124,10 +153,16 @@ button:hover {
 .slideshow img {
     width: 100%;
     display: none;
+    transition: transform 0.2s ease-in-out, transform-origin 0.2s ease-in-out;
+    cursor: zoom-in;
 }
 
 .slideshow img.active {
     display: block;
+}
+
+.slideshow img.active:hover {
+    cursor: zoom-in;
 }
 
 .caption {
@@ -159,10 +194,9 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin: 15px auto 0;
     width: 100%;
     max-width: 800px;
-    margin: 15px auto 0;
 }
 
 #prev-btn, #next-btn {
@@ -180,30 +214,23 @@ button:hover {
 }
 
 /* Map and Calendar Styles */
-.google-map {
+.google-map, .google-calendar {
     display: block;
     margin: 0 auto; 
     width: 100%;
+    border: 0;
+}
+
+.google-map {
     max-width: 600px;
     height: 450px;
-    border: 0;
 }
 
 .google-calendar {
-    width: 100%;
     height: 750px;
-    border: 0;
 }
 
-.slideshow img {
-    transition: transform 0.2s ease-in-out, transform-origin 0.2s ease-in-out;
-    cursor: zoom-in;
-}
-
-.slideshow img.active:hover {
-    cursor: zoom-in;
-}
-
+/* Countdown */
 .countdown-container {
     text-align: center;
     margin: 20px 0;
@@ -214,6 +241,20 @@ button:hover {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
+
+/* Layout and Spacing */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
 }
 
 .center {
