@@ -1,5 +1,7 @@
 const nextShowDate = new Date("2024-12-09T10:00:00");
 
+let countdownInterval;
+
 function updateCountdown() {
     const now = new Date();
     const timeRemaining = nextShowDate - now;
@@ -19,6 +21,6 @@ function updateCountdown() {
         `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
-const countdownInterval = setInterval(updateCountdown, 1000);
+countdownInterval = setInterval(updateCountdown, 1000);
 
 updateCountdown();
