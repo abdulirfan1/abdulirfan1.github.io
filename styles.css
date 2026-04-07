@@ -345,6 +345,70 @@ header {
 }
 
 /* ============================================================
+   CONTACT DROPDOWN
+   ============================================================ */
+.contact-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dropdown-caret {
+  font-size: 0.75rem;
+  transition: transform var(--transition);
+}
+
+.contact-dropdown.open .dropdown-caret {
+  transform: rotate(180deg);
+}
+
+.contact-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  min-width: 160px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  list-style: none;
+  padding: 0.35rem 0;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.contact-dropdown.open .contact-dropdown-menu {
+  display: block;
+}
+
+.contact-dropdown-menu a,
+.contact-dropdown-menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 0.55rem 1rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--transition), color var(--transition);
+}
+
+.contact-dropdown-menu a:hover,
+.contact-dropdown-menu button:hover {
+  background: var(--green-glow);
+  color: var(--green);
+}
+
+/* ============================================================
    ABOUT
    ============================================================ */
 #about {

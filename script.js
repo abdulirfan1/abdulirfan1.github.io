@@ -208,3 +208,42 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 })();
+
+/* ============================================================
+   CONTACT DROPDOWN
+   ============================================================ */
+(function () {
+  const dropdown = document.querySelector('.contact-dropdown');
+  if (!dropdown) return;
+
+  const toggle = dropdown.querySelector('.contact-dropdown-toggle');
+
+  toggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const open = dropdown.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+
+  // Copy-to-clipboard buttons
+  dropdown.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      navigator.clipboard.writeText(btn.dataset.copy).then(function () {
+        const original = btn.textContent.trim();
+        btn.textContent = btn.dataset.label + ' Copied!';
+        setTimeout(function () {
+          btn.innerHTML = btn.dataset.label === 'Email'
+            ? '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Copy Email'
+            : '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Copy Phone';
+        }, 1500);
+      });
+      dropdown.classList.remove('open');
+      toggle.setAttribute('aria-expanded', false);
+    });
+  });
+
+  // Close on outside click
+  document.addEventListener('click', function () {
+    dropdown.classList.remove('open');
+    toggle.setAttribute('aria-expanded', false);
+  });
+})();
