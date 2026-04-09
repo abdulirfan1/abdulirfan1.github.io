@@ -535,6 +535,9 @@ header {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -621,10 +624,12 @@ header {
   border-radius: 20px;
 }
 
-.project-card-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+.project-links {
+  display: flex;
+  gap: 1rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: auto;
 }
 
 .project-link-icon {

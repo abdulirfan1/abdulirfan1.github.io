@@ -254,3 +254,16 @@
     toggle.setAttribute('aria-expanded', false);
   });
 })();
+
+
+/* ============================================================
+   PROJECT CARDS — click anywhere on card to open live demo
+   ============================================================ */
+(function () {
+  document.querySelectorAll('.project-card[data-href]').forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      if (e.target.closest('a')) return;
+      window.open(card.dataset.href, '_blank', 'noopener,noreferrer');
+    });
+  });
+})();
