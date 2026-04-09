@@ -621,11 +621,10 @@ header {
   border-radius: 20px;
 }
 
-.project-links {
-  display: flex;
-  gap: 1rem;
-  border-top: 1px solid var(--border);
-  padding-top: 1rem;
+.project-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-link-icon {
